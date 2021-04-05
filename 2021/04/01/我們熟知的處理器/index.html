@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"scist-tw.github.io","root":"/blog/","scheme":"Pisces","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta name="description" content="我們熟知的處理器作者：CSC相信許多人對最近蘋果M1處理器很有興趣吧 為什麼Windows也要因應這款處理器而開始他們的大動作呢？ 為什麼有人說這款處理器使用應用程式有點不太一樣呢？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2021 4月 科普好文 - 我們熟知的處理器">
+<meta property="og:url" content="https://scist-tw.github.io/2021/04/01/%E6%88%91%E5%80%91%E7%86%9F%E7%9F%A5%E7%9A%84%E8%99%95%E7%90%86%E5%99%A8/index.html">
+<meta property="og:site_name" content="SCIST Blog">
+<meta property="og:description" content="我們熟知的處理器作者：CSC相信許多人對最近蘋果M1處理器很有興趣吧 為什麼Windows也要因應這款處理器而開始他們的大動作呢？ 為什麼有人說這款處理器使用應用程式有點不太一樣呢？">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.imgur.com/5Snv2Lh.jpg">
+<meta property="og:image" content="https://i.imgur.com/vBFAiOj.png">
+<meta property="og:image" content="https://i.imgur.com/divU0yP.png">
+<meta property="article:published_time" content="2021-04-01T04:00:59.000Z">
+<meta property="article:modified_time" content="2021-04-01T04:22:17.539Z">
+<meta property="article:author" content="SCIST">
+<meta property="article:tag" content="科普好文">
+<meta property="article:tag" content="處理器">
+<meta property="article:tag" content="2021 4月">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/5Snv2Lh.jpg">
+
+
+<link rel="canonical" href="https://scist-tw.github.io/2021/04/01/%E6%88%91%E5%80%91%E7%86%9F%E7%9F%A5%E7%9A%84%E8%99%95%E7%90%86%E5%99%A8/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>2021 4月 科普好文 - 我們熟知的處理器 | SCIST Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><link rel="alternate" href="/blog/atom.xml" title="SCIST Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">SCIST Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-about">
+
+    <a href="/blog/about" rel="section"><i class="fa fa-address-card fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-科普知識">
+
+    <a href="/blog/Scientific-knowledge" rel="section"><i class="fa fa-flask fa-fw"></i>科普知識</a>
+
+  </li>
+        <li class="menu-item menu-item-課程影片">
+
+    <a href="/blog/Course-videos" rel="section"><i class="fa fa-video fa-fw"></i>課程影片</a>
+
+  </li>
+        <li class="menu-item menu-item-演算法">
+
+    <a href="/blog/Algorithm" rel="section"><i class="fa fa-terminal fa-fw"></i>演算法</a>
+
+  </li>
+        <li class="menu-item menu-item-資訊安全">
+
+    <a href="/blog/Information-security" rel="section"><i class="fa fa-shield-alt fa-fw"></i>資訊安全</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%91%E5%80%91%E7%86%9F%E7%9F%A5%E7%9A%84%E8%99%95%E7%90%86%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">我們熟知的處理器</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E4%BD%9C%E8%80%85%EF%BC%9ACSC"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">作者：CSC</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ISA"><span class="nav-number">1.1.</span> <span class="nav-text">ISA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RISC-amp-CISC"><span class="nav-number">1.2.</span> <span class="nav-text">RISC &amp; CISC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARM-x86"><span class="nav-number">1.3.</span> <span class="nav-text">ARM x86</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#M1"><span class="nav-number">1.4.</span> <span class="nav-text">M1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%91%E6%9C%9F%E7%9A%84%E5%A4%A7%E6%96%B0%E8%81%9E%EF%BC%81%EF%BC%9FMIPS%E5%8D%B3%E5%B0%87%E6%8A%95%E5%85%A5RISC-V%E7%9A%84%E6%87%B7%E6%8A%B1"><span class="nav-number">1.5.</span> <span class="nav-text">近期的大新聞！？MIPS即將投入RISC-V的懷抱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-number">1.6.</span> <span class="nav-text">結論</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SCIST"
+      src="/blog/images/SCIST_logo.png">
+  <p class="site-author-name" itemprop="name">SCIST</p>
+  <div class="site-description" itemprop="description">這是SCIST的學習資源整合網站，包含資安、演算法、程式語言、科普知識</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/blog/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/blog/atom.xml" rel="alternate">
+      <i class="fa fa-rss-square"></i>
+      RSS
+    </a>
+  </div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/scist-tw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;scist-tw" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:official@scist.org" title="E-Mail → mailto:official@scist.org" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/scist.tw" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;scist.tw" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC5lWl8evP-TYy9cldZs8zwA" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC5lWl8evP-TYy9cldZs8zwA" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-TW" class="cc-opacity" rel="noopener" target="_blank"><img src="/blog/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://scist-tw.github.io/2021/04/01/%E6%88%91%E5%80%91%E7%86%9F%E7%9F%A5%E7%9A%84%E8%99%95%E7%90%86%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/SCIST_logo.png">
+      <meta itemprop="name" content="SCIST">
+      <meta itemprop="description" content="這是SCIST的學習資源整合網站，包含資安、演算法、程式語言、科普知識">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SCIST Blog">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          2021 4月 科普好文 - 我們熟知的處理器
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2021-04-01 12:00:59 / 修改時間：12:22:17" itemprop="dateCreated datePublished" datetime="2021-04-01T12:00:59+08:00">2021-04-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/blog/categories/Scientific-knowledge/" itemprop="url" rel="index"><span itemprop="name">Scientific-knowledge</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="我們熟知的處理器"><a href="#我們熟知的處理器" class="headerlink" title="我們熟知的處理器"></a>我們熟知的處理器</h1><h6 id="作者：CSC"><a href="#作者：CSC" class="headerlink" title="作者：CSC"></a>作者：CSC</h6><p>相信許多人對最近蘋果M1處理器很有興趣吧</p>
+<p>為什麼Windows也要因應這款處理器而開始他們的大動作呢？</p>
+<p>為什麼有人說這款處理器使用應用程式有點不太一樣呢？</p>
+<p>亦或者是為什麼iPhone的應用程式忽然可以裝到mac裡面了呢？</p>
+<p>讓本文帶你稍稍了解處理器吧</p>
+<h2 id="ISA"><a href="#ISA" class="headerlink" title="ISA"></a>ISA</h2><p>要講處理器之前，當然要來講一下ISA(Instruction Set Architecture 指令集架構)啦，是電腦架構中與程式設計有關的部分，包含了基本資料類型，指令集，暫存器，定址模式，儲存體系，中斷，異常處理以及外部I/O。</p>
+<p>利用上述幾個東西的各種配合，設計，可以分為以下幾種：複雜指令集電腦CISC、精簡指令集電腦RISC、最小指令集電腦MISC、單指令集電腦OISC等等。</p>
+<p>這就好比是蓋房子，有不同的設計，每一種設計都需要遵守建築規範，而蓋房子總是要有不同的用途，根據這一些不同用途的房子建立出了許多的建築規範，也就是各式的指令集架構。</p>
+<h2 id="RISC-amp-CISC"><a href="#RISC-amp-CISC" class="headerlink" title="RISC &amp; CISC"></a>RISC &amp; CISC</h2><p><img src="https://i.imgur.com/5Snv2Lh.jpg"></p>
+<p>在計算機指令系統的最佳化發展過程中，出現過兩個截然不同的最佳化方向：CISC技術和RISC技術。CISC是指複雜指令系統計算機(Complex Instruction Set Computer)；RISC是指精簡指令系統計算機(Reduced Instruction Set Computer)。這裡的計算機指令系統指的是計算機的最低層的機器指令，也就是CPU能夠直接識別的指令。隨著計算機系統的複雜，要求計算機指令系統的構造能使計算機的整體性能更快更穩定。最初，人們採用的最佳化方法是通過設定一些功能複雜的指令，把一些原來由軟體實現的、常用的功能改用硬體的指令系統實現，以此來提高計算機的執行速度，這種計算機系統就被稱為複雜指令系統計算機。另一種最佳化方法是在1980年代才發展起來的，其基本思想是儘量簡化計算機指令功能，只保留那些功能簡單、能在一個節拍內執行完成的指令，而把較複雜的功能用一段子程式來實現，這種計算機系統就被稱為精簡指令系統計算機。</p>
+<p>簡單來說RISC和CISC的差別就像是命令建築工人做事情一樣，RISC只聽得懂簡單的指令，像是堆磚頭，抹水泥，漆油漆，而CISC聽得懂複雜的指令，像是把這一座牆蓋好，把這個屋頂蓋好等等。而它們最大的差別，就是耗電量，CISC的耗電量會明顯的比RISC高出許多，但是取而代之的是更好的效能。</p>
+<p>關於RISC的歷史，可以參考這一篇文章<br><a target="_blank" rel="noopener" href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/risc/">https://www.ibm.com/ibm/history/ibm100/us/en/icons/risc/</a></p>
+<p>想了解更多RISC與CISC的差別，可以參考這一篇文章<br><a target="_blank" rel="noopener" href="https://www.itread01.com/content/1549989571.html">https://www.itread01.com/content/1549989571.html</a></p>
+<h2 id="ARM-x86"><a href="#ARM-x86" class="headerlink" title="ARM x86"></a>ARM x86</h2><p><img src="https://i.imgur.com/vBFAiOj.png"></p>
+<p>大家都在說ARM ARM到底什麼是ARM呢？<br>ARM的全名是Advanced RISC Machine(進階精簡指令集機器，更早稱作艾康精簡指令集機器，Acorn RISC Machine)，它是由RISC所設計出來的架構，ARM的處理器是我們平常最常接觸到的處理器，超過90%的手機處理器是採用ARM架構去進行設計的。</p>
+<p>與ARM架構常被提出的東西–x86，那這又是什麼呢，x86泛指一系列基於Intel 8086且向下相容的中央處理器指令集架構，該系列較早期的處理器名稱是以數字來表示80x86。由於以「86」作為結尾，包括Intel 8086、80186、80286、80386以及80486，因此其架構被稱為「x86」。x86的64位元版本被稱為x86-64或是x64。與ARM最大的差別是，它是CISC所設計出來的架構，而我們最常看到x86的地方就是我們的家用電腦了，幾乎所有的電腦處理器都是由x86的架構去進行設計的，包括Intel與AMD的處理器都是。</p>
+<p>設計給x86使用的軟體，不可以直接在ARM的電腦上面進行使用，需要進行翻譯，如同前面所述，給RISC的工人下達蓋好一面牆的命令，他是無法執行的，反之亦然。</p>
+<p>其實，在ARM以及x86以外，還有許多以RISC，CISC架構設計的其他架構，如：<br>RISC</p>
+<blockquote>
+<p>RISC-V，MIPS</p>
+</blockquote>
+<p>CISC</p>
+<blockquote>
+<p>68k，PDP-11</p>
+</blockquote>
+<p>想要了解更多有關ARM與x86的差別，可以參考這一篇<br><a target="_blank" rel="noopener" href="https://www.itread01.com/content/1548244623.html">https://www.itread01.com/content/1548244623.html</a></p>
+<p>關於另一種不同於ARM架構的RISC-V架構(同樣也是RISC家族的)可以參考這一篇文章<br><a target="_blank" rel="noopener" href="https://cnrv.gitbooks.io/riscv-soc-book/content/">https://cnrv.gitbooks.io/riscv-soc-book/content/</a></p>
+<h2 id="M1"><a href="#M1" class="headerlink" title="M1"></a>M1</h2><p><img src="https://i.imgur.com/divU0yP.png"></p>
+<p>Apple M1是蘋果公司第一款基於ARM架構的自研處理器，它聲名大噪的原因，很大一部分是因為蘋果公司大膽的使用了ARM架構去製造電腦的處理器，雖然以前有ARM的windows電腦出現，但是事實證明，是失敗的，而這一次蘋果設計的M1處理器有打破ARM在電腦處理器並不優秀這個觀念的趨勢。</p>
+<p>網路上有許多對於M1處理器MAC的實測，你或許有聽到：「這款應用程式並不是為M1晶片所設計的，所以未來還有更好等前景」等等的說法，這是因為市面上大多電腦的應用程式是寫給x86處理器去進行運行的，而若是ARM處理器需要運行，則須通過翻譯，蘋果公司對於此現象目前的解決方法是使用Rosetta 2去進行翻譯，所有的x86的應用程式，想要在M1的mac運行，都必須經過Rosetta 2，因此，可能發生一些不穩定的現象，這全屬正常現象。</p>
+<p>你或許有看到許多網路上對於M1與core-i9或是AMD的R9進行比較，會說M1的效能在經過Rosetta 2多一道工序還是直逼i9R9，這是事實，但是絕不能說ARM架構的處理器效能比x86好，因為這個比較是不公平的，M1使用的是台積電5nm的製程，R9則是使用台積電7nm的製程，i9則是使用了intel的14nm製程(等同台積電10nm製程)，差了整整一到兩個世代的產品，效能當然有一定的差距，並且蘋果公司有對M1晶片進行許多其他部分的優化，對於處理器與其他元件的互動更加，所以才有更好的速度。</p>
+<p>至於ios的應用程式以前不能安裝到mac上，在M1上變得可行的原因同樣也是因為同為ARM架構，不須經過太複雜的工序即可移植，但目前可以這樣做的應用程式非常少，應該是尚未有好的使用者體驗的問題。</p>
+<h2 id="近期的大新聞！？MIPS即將投入RISC-V的懷抱"><a href="#近期的大新聞！？MIPS即將投入RISC-V的懷抱" class="headerlink" title="近期的大新聞！？MIPS即將投入RISC-V的懷抱"></a>近期的大新聞！？MIPS即將投入RISC-V的懷抱</h2><p>MIPS架構是當時與ARM架構，RISC-V架構共同對抗Intel的x86架構的夥伴(？)也算是競爭對手，然而在時代的演變下，ARM架構得到各公司的青睞，MIPS架構乏人問津，最近MIPS公司準備與RISC-V架構靠攏，不再推出MIPS架構，對於這方面的新聞，有興趣的話可以參考這兩篇文章。<br>中文：<a target="_blank" rel="noopener" href="https://www.techbang.com/posts/85115-arm-x86-mips">https://www.techbang.com/posts/85115-arm-x86-mips</a><br>英文：<a target="_blank" rel="noopener" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.eejournal.com/article/wait-what-mips-becomes-risc-v/&amp;ved=0ahUKEwiDv9Tioq3vAhWsHqYKHZdeCK4QxfQBCC4wAA&amp;usg=AOvVaw21fkdijgoiS1e_Dj4Ib8H7">https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.eejournal.com/article/wait-what-mips-becomes-risc-v/&amp;ved=0ahUKEwiDv9Tioq3vAhWsHqYKHZdeCK4QxfQBCC4wAA&amp;usg=AOvVaw21fkdijgoiS1e_Dj4Ib8H7</a></p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>看完上文對處理器的介紹後，有沒有對於處理器更加地了解了呢，其實這其中蘊含的許多更難的知識，有興趣的人以後可以選擇去研讀機器語言、處理器架構相關的書籍呦。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+  <div class="followme">
+    <span>歡迎關注我的其它發布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/blog/tags/%E7%A7%91%E6%99%AE%E5%A5%BD%E6%96%87/" rel="tag"># 科普好文</a>
+              <a href="/blog/tags/%E8%99%95%E7%90%86%E5%99%A8/" rel="tag"># 處理器</a>
+              <a href="/blog/tags/2021-4%E6%9C%88/" rel="tag"># 2021 4月</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2021/02/24/%E8%AA%8D%E8%AD%982021%E6%96%B0%E5%85%A8%E7%90%83%E9%A6%96%E5%AF%8C%E4%BC%8A%E9%9A%86%C2%B7%E9%A6%AC%E6%96%AF%E5%85%8B/" rel="prev" title="2021 1月 科普好文 - 認識2021新全球首富伊隆·馬斯克">
+                  <i class="fa fa-chevron-left"></i> 2021 1月 科普好文 - 認識2021新全球首富伊隆·馬斯克
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SCIST</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+      <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      const script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.0/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
